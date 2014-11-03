@@ -1,4 +1,4 @@
-require('newrelic');
+//require('newrelic');
 /**
  * Created by roexber on 4/07/14.
  */
