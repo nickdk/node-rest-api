@@ -74,7 +74,7 @@ module.exports = function (grunt) {
                     stream: true,
                     grunt: true
                 },
-                tasks: ['watch:app', 'shell:mongodb', 'watch:test', "doshow"]
+                tasks: ['watch:app', 'watch:test', "doshow"]
             }
         },
         mocha_istanbul: {
@@ -99,7 +99,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('doshow', ['wait:pause', 'open:server']);
     grunt.registerTask('test', ['jshint', 'simplemocha']);
-    grunt.registerTask('default', ['parallel:dev']);
+    grunt.registerTask('default', ['shell:mongodb','parallel:dev']);
     grunt.registerTask('coverage', ['mocha_istanbul:coverage']);
 
 };
