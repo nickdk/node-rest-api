@@ -17,4 +17,6 @@ mongoose.model('getModel', ModelSchema, 'Model');
 
 var mongoUri = externalService.mongoUrl;
 
-mongoose.connect(mongoUri);
+if(mongoUri && mongoUri.length) {
+    mongoose.connect(mongoUri);
+}
