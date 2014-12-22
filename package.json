@@ -15,7 +15,7 @@
     "restify": "2.8.1",
     "swagger-node-express": "2.1.0",
     "winston": "0.7.3",
-    "newrelic": "1.13.0"
+    "newrelic": "1.14.3"
   },
   "devDependencies": {
     "chai": "^1.9.1",
